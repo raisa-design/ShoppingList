@@ -38,7 +38,7 @@ namespace ShoppingList.Controller
 
         }
         [HttpPut("{id}")]
-        public IActionResult UpdateItem(int id, Item alteracao)
+        public IActionResult UpdateItem(int id, Item alteracao )
         {
             var item = _context.items.Find(id);
 
